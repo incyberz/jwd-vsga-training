@@ -1,3 +1,32 @@
+<?php
+# ========================================================
+# AKADEMIK INDEX
+# ========================================================
+session_start();
+$dm = 1;
+$is_login = 0;
+
+include 'config.php';
+
+# ========================================================
+# INCLUDE INSHO STYLES
+# ========================================================
+$insho_styles = $online_version ? 'insho_styles.php' : '../insho_styles.php';
+include $insho_styles;
+
+# ========================================================
+# INCLUDE LOGIN PETUGAS
+# ========================================================
+if(isset($_SESSION['jwd_username'])){
+  $username = $_SESSION['jwd_username'];
+  include '../user_vars.php';
+}else{
+  // echo '<script>location.replace("../")</script>';
+}
+// include 'include/data_login_petugas.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +43,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -33,9 +62,9 @@
 <body>
 
   <?php include 'pages/header.php'; ?>
-  <?php include 'pages/hero.php'; ?>
-  <main id="main">
-    <?php include 'pages/sections.php'; ?>
+  <?php //include 'pages/hero.php'; ?>
+  <main id="main" style='padding-top:50px'>
+    <?php include 'routing.php'; ?>
   </main>
   <?php include 'pages/footer.php'; ?>
   

@@ -6,7 +6,7 @@
         <h1 data-aos="fade-up">Grow your Web Development Skills !</h1>
         <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented programmers making websites with heart.</h2>
         <div data-aos="fade-up" data-aos-delay="800">
-          <a href="?start" class="btn-get-started scrollto">Get Started</a>
+          <a href="?start" class="btn-get-started scrollto">Mulai Belajar</a>
         </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">

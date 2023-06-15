@@ -1,11 +1,11 @@
 <footer id="footer">
   <div class="container">
     <div class="row d-flex align-items-center">
-      <div class="col-lg-6 text-lg-left text-center">
+      <div class="col-lg-12 text-lg-left text-center">
         <div class="copyright">
-          &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
+          By: <a href="?team"><strong>Iin Sholihin</strong></a>. &copy; There is no copyright. Hak Cipta hanya Milik Allah
         </div>
-        <div class="credits">
+        <div class="credits hideit">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
@@ -13,7 +13,7 @@
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 hideit">
         <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
           <a href="#intro" class="scrollto">Home</a>
           <a href="#about" class="scrollto">About</a>
